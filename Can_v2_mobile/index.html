@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="component">
+      <div class="overlap-group">
+        <div class="rectangle"></div>
+        <div class="header"></div>
+        <div class="text-wrapper">Login</div>
+        <div class="user-input">
+          <input type="text" id="user" placeholder="User"><br>
+          <!-- <div class="div">User</div> -->
+          <div class="rectangle-2"></div>
+        </div>
+        <div class="password-input">
+          <input type="password" id="password" placeholder="Password" required><br>
+          <!-- <div class="div">Password</div> -->
+          <div class="rectangle-2"></div>
+        </div>
+        <button class="login-button" id="login-button" on-click="{{ url_for('dashboard') }}"><div class="text-wrapper-2">Login</div></button>
+        <img class="logo-i-soft" src="img/logo-i-soft.svg" />
+      </div>
+    </div>
+  </body>
+</html>
