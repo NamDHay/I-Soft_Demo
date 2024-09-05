@@ -1,0 +1,19 @@
+{% extends 'base.html ' %}
+
+{% block component %}
+  <div class="overlap-group">
+    <div class="rectangle"></div>
+    <div class="header"></div>
+    <div class="text-wrapper">Login</div>
+    <div class="user-input">
+      <div class="div">User</div>
+      <div class="rectangle-2"></div>
+    </div>
+    <div class="password-input">
+      <div class="div">Password</div>
+      <div class="rectangle-2"></div>
+    </div>
+    <button class="login-button"><div class="text-wrapper-2">Login</div></button>
+    <img class="logo-i-soft" src="{{ url_for('static', filename='images/logo-i-soft.svg') }}" />
+  </div>
+{% endblock %}
