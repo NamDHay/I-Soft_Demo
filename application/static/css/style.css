@@ -314,6 +314,18 @@
   background-color: #ffe49e;
   border-radius: 10px;
   box-shadow: -2px -2px 4px #a8a6a6, 0px 3px 4px #333131;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  /* Smooth transitions */
+}
+
+.DASHBOARD .select-bnt:active,
+.DASHBOARD .select-bnt:focus {
+  background-color: #ffd700;
+  /* Change background color on active */
+  box-shadow: inset -2px -2px 4px #a8a6a6, inset 0px 3px 4px #333131;
+  /* Inset shadow */
+  outline: none;
+  /* Remove outline on focus */
 }
 
 .DASHBOARD .text-wrapper-10 {
@@ -524,7 +536,19 @@
   left: 328px;
   background-color: #ffe49e;
   border-radius: 10px;
-  box-shadow: -1px -2px 4px #bdbdbd, 0px 4px 4px #00000040;
+  box-shadow: -1px -2px 4px #bdbdbd, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s, box-shadow 0.2s;
+  /* Smooth transitions */
+}
+
+.DASHBOARD .select-bnt-2:active,
+.DASHBOARD .select-bnt-2:focus {
+  background-color: #ffd700;
+  /* Change background color on active */
+  box-shadow: inset -1px -2px 4px #bdbdbd, inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* Inset shadow */
+  outline: none;
+  /* Remove outline on focus */
 }
 
 .DASHBOARD .text-wrapper-19 {
@@ -753,6 +777,26 @@
   background-color: #131224;
   border-radius: 10px;
   box-shadow: 1px 3px 4px #333131, -4px -4px 4px #fefefe;
+  color: white;
+  /* Text color */
+  font-size: 16px;
+  /* Font size */
+  text-align: center;
+  /* Center the text */
+  line-height: 46px;
+  /* Align text vertically */
+  transition: background-color 0.2s, box-shadow 0.2s;
+  /* Smooth transitions */
+}
+
+.DASHBOARD .BNT:active,
+.DASHBOARD .BNT:focus {
+  background-color: #1a1a3d;
+  /* Darker background on active */
+  box-shadow: inset 1px 3px 4px #333131, inset -4px -4px 4px #fefefe;
+  /* Inset shadow */
+  outline: none;
+  /* Remove outline on focus */
 }
 
 .DASHBOARD .text-wrapper-35 {
