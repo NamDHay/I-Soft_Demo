@@ -17,8 +17,16 @@
       
       <div class="rectangle-2"></div>
     </div>
-    <a href="{{ url_for('dashboard') }}" class="login-button">
-      <div class="text-wrapper-2">Login</div>
+    <div class="group-button">
+      <a href="{{ url_for('dashboard') }}" class="login-button">
+        <div class="text-wrapper-2">Login</div>
+      </a>
+      <a  class="forget-button">
+        <div class="text-wrapper-3">Forgotten password?</div>
+      </a>
+    </div>
+    <a  class="creat-button">
+      <div class="text-wrapper-4">Creat a new account</div>
     </a>
     <img class="logo-i-soft" src="{{ url_for('static', filename='images/logo-i-soft.svg') }}" />
   </div>
