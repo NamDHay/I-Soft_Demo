@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="component">
+      <div class="overlap-group">
+        <div class="rectangle"></div>
+        <div class="header"></div>
+        <div class="text-wrapper">Login</div>
+        <div class="user-input">
+          <input type="text" id="user" placeholder="User"><br>
+          <div class="rectangle-2"></div>
+        </div>
+        <div class="password-input">
+          <input type="password" id="password" placeholder="Password" required><br>
+          <button type="button" id="toggle-password" class="toggle-password">
+            <i id="toggle-icon" class="fa fa-eye"></i>
+          </button>
+          <div class="rectangle-2"></div>
+        </div>
+        <a href="{{ url_for('dashboard') }}" class="login-button">
+          <div class="text-wrapper-2">Login</div>
+        </a>
+        <img class="logo-i-soft" src="img/logo-i-soft.svg" />
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById('toggle-password').addEventListener('click', function() {
+      const passwordField = document.getElementById('password');
+      const icon = document.getElementById('toggle-icon');
+  
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+      } else {
+        passwordField.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+      }
+    });
+  </script>
+</html>
